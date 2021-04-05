@@ -231,6 +231,59 @@
                 }
             });
       });
+
+
+       
+    $('#form_submit').on('click', function (event) {
+        var data;
+        
+        event.stopPropagation();
+        event.preventDefault();
+
+      var msg = "Inquiry received form user for Kido summer camp 2021 with following details,<br>"
+              +" Email : "+$("#email").val()+"<br>Parent Name : "+$("#parent_name").val()+"<br>Parent Contact No.:"+$("#parent_phone").val()+"<br>Child Name : "+$("#child_name").val()+"<br>Child DOB :"+$("#child_dob").val()+"<br>Class Interested In : "+$("#class_interested_in").val()+"<br>Week Interested In : "+$("#week_interested_in").val()+"<br> School bus service interested in : "+$("#bus_interested_in").val()+"<br> Address : "+$("#address").val();
+
+        var form = new FormData();
+        form.append("api", "save_summer_camp");
+        // form.append("data", "{
+        //     \"email\":\"manthan@kido.school\",
+        //     \"parent_name\":\"nitish\",
+        //     \"child_name\":\"sharddah\",
+        //     \"child_dob\":\"01-12-2015\",
+        //     \"class_interested_in\":\"Explorers (2 - 4 years)\",
+        //     \"week_interested_in\":\"Week 1: 19th - 23rd July\",
+        //     \"bus_interested_in\":\"yes\",
+        //     \"parent_phone\":\"1234567890\",
+        //     \"address\":\"test\"
+        // }");
+        form.append("email", $("#email").val());
+        form.append("parent_name", $("#parent_name").val());
+        form.append("parent_phone", $("#parent_phone").val());
+        form.append("child_name", $("#child_name").val());
+        form.append("child_dob", $("#child_dob").val());
+        form.append("class_interested_in", $("#class_interested_in").val());
+        form.append("week_interested_in", $("#week_interested_in").val());
+        form.append("bus_interested_in", $("#bus_interested_in").val());
+        form.append("address", $("#address").val());
+        form.append("mail_message", msg);
+        form.append("type", "inquiry");
+
+        var settings = {
+        "url": "https://shop.kidovillage.com/kvshop_api/api.php",
+        "method": "POST",
+        "timeout": 0,
+        "processData": false,
+        "mimeType": "multipart/form-data",
+        "contentType": false,
+        "data": form
+        };
+
+        $.ajax(settings).done(function (response) {
+        console.log(response);
+        window.location = "thankyou.html";
+        });
+    });
+
     </script>
 </body>
 </html>
