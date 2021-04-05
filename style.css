@@ -1,0 +1,107 @@
+html {scroll-behavior: smooth;}
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    /* padding-top: 60px; */
+    line-height: 1.5;
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    /* text-transform: capitalize; */
+    color: #000;
+}
+h1, .h1 {font-size: 1.9em;}
+h2, .h2 {font-size: 1.7em;}
+h3, .h3 {font-size: 1.15em;}
+h4, .h4 {font-size: 1.1em;}
+h5, h6, .h5, .h6{font-size: 1em; }
+
+p,li {color: #222; font-size: 0.8em;}
+a {color: #222; text-decoration: none;  transition: 0.3s; cursor: pointer;}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #063268;
+    color: #fff;
+    cursor: pointer;
+  }
+  .topbtn button:hover{
+      background: #000;
+      color: #fff;
+  }
+
+  .text-primary{
+    color: #063268!important;
+  }
+
+  .btn-primary{
+    background-color: #063268 !important;
+  }
+
+.error{
+  color: red;
+  font-size: 0.8em;
+}
+
+label{
+  font-size: 0.9em;
+}
+
+.thanku-text{
+ font-size: 0.9em;
+ font-weight: 600;
+}
+
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 70%;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+input[type="date"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 70%;
+}
+
+input[type="date"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-label{
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 0.8em;
+  }

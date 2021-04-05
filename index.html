@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Kido Summer Camp 2021</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <section class="banner py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                        <img src="assets/banner.jpg" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="summer-camp-text pb-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="data border shadow-sm rounded p-3">
+                        <h2>Kido Summer Camp 2021</h2>
+                        <p>Thank you for your interest in our Summer Camp which will run for 4 weeks from 19th July - 13th August for children aged 2 - 6 years old.</p>
+                        <p>Each week there will be bilingual (English / Mandarin) activities such as Literacy, Arts & Crafts, Maths, Science, Technology and Physical Development Activities.</p>
+                        <p>Morning half day sessions are available from 9am - 12pm. The fee for half day session is HK$2,750 per week. Minimum of 2 weeks enrollment required.</p>
+                        <p>Please complete the form below to register your interest. Once we have received these details we will contact you to confirm your space. Should you have any questions, please contact us at infohk@kido.school or 2177 0001.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="summer-camp-form pb-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="validateform">
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                            <input type="text" name="email" class="form-control" id="email" placeholder="Enter your email address">
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="parent_name" class="form-label">Parent's full name <span class="text-danger">*</span></label>
+                            <input type="text" name="parent_name" class="form-control" id="parent_name" placeholder="Enter Parent's full name">
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="parent_phone" class="form-label">Parent's phone number <span class="text-danger">*</span></label>
+                            <input type="text" name="parent_phone" class="form-control" id="parent_phone" placeholder="Enter Parent's phone number">
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="child_name" class="form-label">Child's full name <span class="text-danger">*</span></label>
+                            <input type="text" name="child_name" class="form-control" id="child_name" placeholder="Enter child's name">
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="child_dob" class="form-label">Child's date of birth? (Please note children 2 years old must have already be enrolled in unaccompanied classes, no transition/ settling in time will be arranged during summer camp).  <span class="text-danger">*</span></label>
+                            <input type="date" name="child_dob" class="form-control" id="child_dob" placeholder="Enter child DOB">
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="class_interested_in" class="form-label">Which class are you interested in?<span class="text-danger">*</span></label>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="class_interested_in" id="class_interested_in" value="Explorers (2 - 4 years)">
+                                <label class="form-check-label" for="class_interested_in">
+                                    Explorers (2 - 4 years)
+                                </label>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="class_interested_in" id="class_interested_in" value="Rangers (4 - 6 years)">
+                                <label class="form-check-label" for="class_interested_in">
+                                    Rangers (4 - 6 years)
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="week_interested_in" class="form-label">Which weeks are you interested in? (Minimum 2 weeks enrollment required) <span class="text-danger">*</span></label>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" name="week_interested_in" id="week_interested_in" value="Week 1: 19th - 23rd July">
+                                <label class="form-check-label" for="week_interested_in">Week 1: 19th - 23rd July</label>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" name="week_interested_in" id="week_interested_in" value="Week 2: 26th - 30th July">
+                                <label class="form-check-label" for="week_interested_in">Week 2: 26th - 30th July</label>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" name="week_interested_in" id="week_interested_in" value="Week 3: 2nd - 6th August">
+                                <label class="form-check-label" for="week_interested_in">Week 3: 2nd - 6th August</label>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" name="week_interested_in" id="week_interested_in" value="Week 4: 9th - 13th August">
+                                <label class="form-check-label" for="week_interested_in">Week 4: 9th - 13th August</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="bus_interested_in" class="form-label">Are you interested in a school bus service?<span class="text-danger">*</span></label>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="bus_interested_in" id="bus_interested_in" value="Yes">
+                                <label class="form-check-label" for="bus_interested_in">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="bus_interested_in" id="bus_interested_in" value="No">
+                                <label class="form-check-label" for="bus_interested_in">
+                                    No
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <div class="form-group">
+                            <label for="address" class="form-label">If yes, please confirm your address below. There will be an additional fee for the school bus service depending on which area you live in, please contact us for more information.</label>
+                            <input type="text" name="address" class="form-control" id="address" placeholder="Enter your address">
+                        </div>
+                    </div>
+
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <h4>Terms and Conditions</h4>
+                        <p>All closures or class suspension relating but not limited to weather, health, political stability and COVID are dictated by the EDB and/or associated government authorities and must be followed by all schools. In the case that schools are suspended for longer than 2 consecutive days, all classes will move to online virtual sessions. For each day that classes are moved online, you will receive HK$100. For those students enrolled with Kido in the 21-22 academic year, this will be credited to your first months tuition fee payment. For those who are not attending in the 21-22 academic year, this will be refunded to you after the summer camp. No make-up classes will be arranged under any circumstances for these or student absences. </p>
+                        <p>Fees are non refundable and non transferable. Your space is only confirmed upon confirmation of payment.</p>
+                        <p>All parents/guardians must complete a Travel & Health Declaration form prior to attendance. Children may not attend school if they are suffering from sickness or display any illness symptoms including but not limited to a temperature above 37.5. coughing, running nose, vomiting and diarrhea.</p>
+                    </div>
+                    <div class="data border shadow-sm rounded p-4 mb-3">
+                        <p class="thanku-text">Thank you for completing this form, we will contact you shortly with a confirmation. If you have any questions in the meantime, please feel free to contact us at infohk@kido.school or 2177 0001.</p>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-sm btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+      $("#validateform").validate({
+                rules:{
+                    email:{
+                        required:true,
+                        minlength: 2
+                    },
+                    parent_name:{
+                        required:true,
+                        minlength: 2
+                    },
+                    child_name:{
+                        required:true,
+                        minlength: 2
+                    },
+                    child_dob:{
+                        required:true,
+                        minlength: 2
+                    },
+                    class_interested_in:{
+                        required:true,
+                    },
+                    week_interested_in:{
+                        required:true,
+                    },
+                    bus_interested_in:{
+                        required:true,
+                    },
+                    parent_phone: { 
+                        required:true,
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 10 
+                     },  
+                },
+    
+                messages:{
+                    email: {
+                        required: "This field is required",
+                        minlength: "Please enter atleast two character"
+                    },
+                    parent_name: {
+                        required: "This field is required",
+                        minlength: "Please enter atleast two character"
+                    },
+                    child_name: {
+                        required: "This field is required",
+                        minlength: "Please enter atleast two character"
+                    },
+                    child_dob: {
+                        required: "This field is required",
+                        minlength: "Please enter atleast two character"
+                    },
+                    class_interested_in: {
+                        required: "This field is required",
+                    },
+                    week_interested_in: {
+                        required: "This field is required",
+                    },
+                    bus_interested_in: {
+                        required: "This field is required",
+                    },
+                  parent_phone: { 
+                    required: "This field is required",
+                    digits: "Please enter a valid mobile number",
+                    minlength: "Please enter 10 digits only",
+                    maxlength: "Please enter 10 digits only" 
+                  },
+    
+                }
+            });
+      });
+    </script>
+</body>
+</html>
