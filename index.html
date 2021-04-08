@@ -267,7 +267,7 @@
             $("#program_interested_in_tslot1").val().length ? data["program_interested_in_tslot1"] = $("#program_interested_in_tslot1").val() :  errs += "Please provide program_interested_in_tslot1 <br>";
             
             data["program_interested_in_tslot2"] = $("#program_interested_in_tslot2").val()
-            week_interested.length ? data["week_interested_in"] = week_interested :errs += "Please provide Week <br> interested";
+            week_interested_str.length ? data["week_interested_in"] = week_interested_str :errs += "Please provide Week <br> interested";
             camp_kit.length ? data["camp_kit_interested_in"] = camp_kit : errs += "Please provide Campkit <br>";
 
             form.append("api", "save_summer_camp");
