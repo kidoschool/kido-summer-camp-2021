@@ -257,17 +257,31 @@
             var errs = "";
 
             var form = new FormData();
+
+            var data = {};
+            $("#email").val().length ?                        data["email"] = $("#email").val() :  errs += "Please provide email <br>";            
+            $("#parent_name").val().length ?                  data["parent_name"] = $("#parent_name").val() :  errs += "Please provide parent_name <br>";
+            $("#parent_phone").val().length ?                 data["parent_phone"] = $("#parent_phone").val() :  errs += "Please provide parent_phone <br>";
+            $("#child_name").val().length ?                   data["child_name"] = $("#child_name").val() :  errs += "Please provide child_name <br>";
+            $("#child_dob").val().length ?                    data["child_dob"] = $("#child_dob").val() :  errs += "Please provide child_dob <br>";
+            $("#program_interested_in_tslot1").val().length ? data["program_interested_in_tslot1"] = $("#program_interested_in_tslot1").val() :  errs += "Please provide program_interested_in_tslot1 <br>";
+            
+            data["program_interested_in_tslot2"] = $("#program_interested_in_tslot2").val()
+            week_interested.length ? data["week_interested_in"] = week_interested :errs += "Please provide Week <br> interested";
+            camp_kit.length ? data["camp_kit_interested_in"] = camp_kit : errs += "Please provide Campkit <br>";
+
             form.append("api", "save_summer_camp");
-            $("#email").val().length ?  form.append("email", $("#email").val()) : errs += "Please provide email <br>";            
-            $("#parent_name").val().length ? form.append("parent_name", $("#parent_name").val()) : errs += "Please provide parent_name <br>";
-            $("#parent_phone").val().length ? form.append("parent_phone", $("#parent_phone").val()) : errs += "Please provide parent_phone <br>";
-            $("#child_name").val().length ? form.append("child_name", $("#child_name").val()) : errs += "Please provide child_name <br>";
-            $("#child_dob").val().length ? form.append("child_dob", $("#child_dob").val()) : errs += "Please provide child_dob <br>";
-            $("#program_interested_in_tslot1").val().length ? form.append("program_interested_in_tslot1", $("#program_interested_in_tslot1").val()) : errs += "Please provide program_interested_in_tslot1 <br>";
-            // $("#program_interested_in_tslot2").val().length ? form.append("program_interested_in_tslot2", $("#program_interested_in_tslot2").val()) : errs += "Please provide program_interested_in_tslot2 <br>";
-            form.append("program_interested_in_tslot2", $("#program_interested_in_tslot2").val());
-            week_interested.length ? form.append("week_interested_in", week_interested) : errs += "Please provide Week <br> interested";
-            camp_kit.length ? form.append("camp_kit_interested_in", camp_kit) : errs += "Please provide Campkit <br>";
+            form.append("data", JSON.stringify(data));
+            // $("#email").val().length ?  form.append("email", $("#email").val()) : errs += "Please provide email <br>";            
+            // $("#parent_name").val().length ? form.append("parent_name", $("#parent_name").val()) : errs += "Please provide parent_name <br>";
+            // $("#parent_phone").val().length ? form.append("parent_phone", $("#parent_phone").val()) : errs += "Please provide parent_phone <br>";
+            // $("#child_name").val().length ? form.append("child_name", $("#child_name").val()) : errs += "Please provide child_name <br>";
+            // $("#child_dob").val().length ? form.append("child_dob", $("#child_dob").val()) : errs += "Please provide child_dob <br>";
+            // $("#program_interested_in_tslot1").val().length ? form.append("program_interested_in_tslot1", $("#program_interested_in_tslot1").val()) : errs += "Please provide program_interested_in_tslot1 <br>";
+            // // $("#program_interested_in_tslot2").val().length ? form.append("program_interested_in_tslot2", $("#program_interested_in_tslot2").val()) : errs += "Please provide program_interested_in_tslot2 <br>";
+            // form.append("program_interested_in_tslot2", $("#program_interested_in_tslot2").val());
+            // week_interested.length ? form.append("week_interested_in", week_interested) : errs += "Please provide Week <br> interested";
+            // camp_kit.length ? form.append("camp_kit_interested_in", camp_kit) : errs += "Please provide Campkit <br>";
             // form.append("mail_message", msg);
             // form.append("type", "inquiry");
             if(errs.length){
