@@ -108,3 +108,9 @@ select.form-control:focus {
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 0.8em;
   }
+
+  .toast{
+    position: fixed;
+    top: 0;
+    left: 25vw;
+  }
