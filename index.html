@@ -270,6 +270,8 @@
             week_interested_str.length ? data["week_interested_in"] = week_interested_str :errs += "Please provide Week <br> interested";
             camp_kit.length ? data["camp_kit_interested_in"] = camp_kit : errs += "Please provide Campkit <br>";
 
+            data["city"] = "";
+
             form.append("api", "save_summer_camp");
             form.append("data", JSON.stringify(data));
             // $("#email").val().length ?  form.append("email", $("#email").val()) : errs += "Please provide email <br>";            
@@ -305,7 +307,7 @@
 
                 $.ajax(settings).done(function (response) {
                     console.log(response);
-                    window.location = "thankyou.html";
+                    // window.location = "thankyou.html";
                 });
             }
 
